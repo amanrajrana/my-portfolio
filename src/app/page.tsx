@@ -1,6 +1,10 @@
+import Hero from "@components/hero/Hero";
+
 const Home = () => {
   return (
-    <div className="flex w-full h-full justify-center items-center">Home</div>
+    <>
+      <Hero />
+    </>
   );
 };
 
