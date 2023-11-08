@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden px-2">
       <div className="max-w-[1150px] mx-auto">
-        <div className="mt-20 grid grid-cols-2">
+        <div className="mt-20 grid lg:grid-cols-2">
           <div className="flex flex-col justify-end">
             <div className="text-4xl font-light opacity-70">
               FULL-STACK WEB DEVELOPER
@@ -35,9 +35,10 @@ const Hero = () => {
                 height={560}
                 width={490}
                 alt="aman"
-                className=""
+                className="h-auto"
+                priority
               />
-              <div className="h-[650px] aspect-square rounded-full translate-x-1/2 right-1/2 -z-10 absolute -bottom-1/3 border-[3px] border-t-transparent border-fuchsia-700 p-6">
+              <div className="sm:w-[650px] aspect-square rounded-full translate-x-1/2 right-1/2 -z-10 absolute -bottom-1/3 border-[3px] border-t-transparent border-fuchsia-700 p-6">
                 <div className="bg-gradient-conic from-cyan-500 via-fuchsia-100 via-50% to-fuchsia-800 to-85% w-full h-full rounded-full"></div>
               </div>
             </div>
