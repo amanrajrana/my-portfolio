@@ -1,3 +1,4 @@
+import X_Mark from "@/components/xMark";
 import Image from "next/image";
 
 const Hero = () => {
@@ -10,7 +11,7 @@ const Hero = () => {
               FULL-STACK WEB DEVELOPER
             </div>
 
-            <h1 className="text-9xl font-semibold flex flex-col">
+            <h1 className="text-8xl font-semibold flex flex-col">
               <span>Aman Raj</span>
               <span>Rana</span>
             </h1>
@@ -22,15 +23,22 @@ const Hero = () => {
           </div>
           <div className="w-full h-full flex items-end justify-center">
             <div className="relative">
+              <div className="absolute top-12">
+                <X_Mark color="#ffffff" size={45} />
+              </div>
+              <div className="absolute top-1/3 right-0">
+                <X_Mark color="#ffffff" size={25} />
+              </div>
+
               <Image
                 src={"/image/aman.png"}
-                height={617}
-                width={537}
+                height={560}
+                width={490}
                 alt="aman"
                 className=""
               />
-              <div className="h-[700px] aspect-square rounded-full translate-x-1/2 right-1/2 -z-10 absolute -bottom-1/3 border-[3px] border-t-transparent border-fuchsia-700 p-4">
-                <div className="bg-purple-800 w-full h-full rounded-full"></div>
+              <div className="h-[650px] aspect-square rounded-full translate-x-1/2 right-1/2 -z-10 absolute -bottom-1/3 border-[3px] border-t-transparent border-fuchsia-700 p-6">
+                <div className="bg-gradient-conic from-cyan-500 via-fuchsia-100 via-50% to-fuchsia-800 to-85% w-full h-full rounded-full"></div>
               </div>
             </div>
           </div>

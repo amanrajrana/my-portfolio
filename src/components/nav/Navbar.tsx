@@ -2,8 +2,8 @@ import ThemeToggle from "./themeToggle";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-4 w-full">
-      <div className="flex justify-between items-center border border-indigo-950 rounded-full max-w-screen-xl mx-auto">
+    <nav className="fixed top-4 w-full z-50">
+      <div className="flex justify-between items-center backdrop-blur-md bg-black bg-opacity-5 border border-indigo-950 rounded-full max-w-screen-xl mx-auto">
         <h1 className="text-2xl font-semibold ml-5">{"<AmanRajRana/>"}</h1>
 
         <ul className="flex gap-x-12">
